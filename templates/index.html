@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot Webpage</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='dist/css/output.css')}}">
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="antialiased">
+    <div x-data="{ expanded: false }" class="flex flex-row h-full w-full space-x-0">
+        <div x-show="expanded" x-collapse class="basis-1/4 h-full w-60 text-white bg-gray-900 shadow-lg">
+            <div  class="">
+                <button type="submit" formmethod="GET" class=" w-full p-10" >
+                    new chat
+                </button>
+            </div>
+        </div>
+        
+        
+        <div id="chat" class="flex flex-col h-screen w-full bg-gray-800">
+            <!--Button to open side pane-->
+            <button @click="expanded = ! expanded" class="align-middle top-bg-gray-600 hover:bg-gray-400 size-9">&#9790</button>
+            <!--Title of the page-->
+            <div class="items-start text-center basis-1/12">
+                <h1 class="font-sans text-xl sm:text-4xl">Custom ChatBot</h1>
+            </div>
+            <!--Chat-->
+
+            <div>
+            </div>
+            <div class="fixed self-center bottom-10 items-end">
+                <form method="POST">
+                    <input type="text" id="message" name="message" class="border p-2 rounded-lg" placeholder="Type your message...">
+                    <button type="submit" class="px-4 py2 bg-blue-500 text-white rounded-lg">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
