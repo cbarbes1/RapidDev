@@ -8,5 +8,9 @@ def index():
         return request.form.get("message")
     return render_template("index.html")
 
+@app.route("/newchat")
+def newchat():
+    return render_template("index.html")
+
 if __name__ == '__main__':
     app.run(debug=True)

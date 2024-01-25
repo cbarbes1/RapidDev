@@ -552,46 +552,12 @@ video {
   position: fixed;
 }
 
-.absolute {
-  position: absolute;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.top-0 {
-  top: 0px;
-}
-
 .bottom-10 {
   bottom: 2.5rem;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
-.bottom-1\/4 {
-  bottom: 25%;
-}
-
-.bottom-1 {
-  bottom: 0.25rem;
-}
-
 .flex {
   display: flex;
-}
-
-.size-20 {
-  width: 5rem;
-  height: 5rem;
-}
-
-.size-10 {
-  width: 2.5rem;
-  height: 2.5rem;
 }
 
 .size-9 {
@@ -615,24 +581,12 @@ video {
   width: 100%;
 }
 
-.w-screen {
-  width: 100vw;
-}
-
-.flex-auto {
-  flex: 1 1 auto;
+.basis-1\/12 {
+  flex-basis: 8.333333%;
 }
 
 .basis-1\/4 {
   flex-basis: 25%;
-}
-
-.basis-3\/4 {
-  flex-basis: 75%;
-}
-
-.basis-1\/12 {
-  flex-basis: 8.333333%;
 }
 
 .flex-row {
@@ -651,18 +605,6 @@ video {
   align-items: flex-end;
 }
 
-.items-center {
-  align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.justify-items-center {
-  justify-items: center;
-}
-
 .space-x-0 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0px * var(--tw-space-x-reverse));
@@ -671,10 +613,6 @@ video {
 
 .self-center {
   align-self: center;
-}
-
-.justify-self-center {
-  justify-self: center;
 }
 
 .rounded-lg {
@@ -688,11 +626,6 @@ video {
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-}
-
-.bg-gray-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
 .bg-gray-800 {
@@ -730,11 +663,6 @@ video {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -762,33 +690,8 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:h-screen {
-    height: 100vh;
-  }
-
-  .sm\:w-screen {
-    width: 100vw;
-  }
-
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
